@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/bootstrap.css">
+   <link rel="stylesheet" href="./css/main.css">
+   <title>Filter</title>
+</head>
+<body>
+   
+   <div class="container">
+   
+   <h1 style="text-align: center;" class="mt-3 w-75 mx-auto text-white">
+      Online cinema "Malle": movies in high quality always bring real pleasure
+   </h1>
+   
+   <div class="d-flex align-items-center pt-4 px-2">
+      <form class="search-form d-flex align-items-center">
+         <label class="label">
+            <input type="search" class="d-block form-control input" placeholder="Search films by name (In large letters)">
+         </label>
+         <button class="btn btn-src btn-primary ms-5" type="submit" style="display: block;">
+            Search
+         </button>
+      </form>
+      
+      <div class="ms-auto me-5">
+         <img width="185" height="80" src="./img/five-stars-removebg-preview.png" alt="">
+      </div>
+      
+      <form method="post" class="select-form d-flex align-items-center">
+         <label class="ms-5 me-3">
+            <select class="select form-select">
+               <option value="all" selected>Show all movies (any genre)</option>
+            </select>
+         </label>
+         <button class="btn btn-src btn-primary" type="submit" style="display: block;">
+            Filter
+         </button>
+         <a style="display: block;" class="btn btn-rest btn-secondary ms-3" href="./index.html">
+            Refresh Filter
+         </a>
+      </form>
+   </div>
+   
+   
+   <ul class="list row">
+      
+   </ul>
+   
+</div>
+
+
+<script src="./js/films.js"></script>
+<script src="./js/scripts.js"></script>
+</body>
+</html>

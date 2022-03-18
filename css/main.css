@@ -1,0 +1,78 @@
+body{
+   background-color: #1c1c1c; 
+}
+
+.label{
+   position: relative;
+   z-index: 1;
+}
+.label::before {
+   content: "";
+   position: absolute;
+   z-index: 1;
+   background-image: url(../img/lupa.svg);
+   background-size: cover;
+   width: 25px;
+   height: 25px;
+   right: -30px;
+   top: 6px;
+   background-repeat: no-repeat;
+   cursor: pointer;
+}
+.form-control{
+   width: 320px;
+}
+.form-control:focus{
+   box-shadow: 0 0 0 0.25rem rgba(253, 253, 253, 0.5);
+}
+.form-select:focus{
+   box-shadow: 0 0 0 0.25rem rgba(253, 253, 253, 0.5);
+}
+
+
+
+.list{
+   padding: 0px;
+   margin: 0px;
+   margin-top: 30px;
+   row-gap: 34px;
+   margin-bottom: 50px;
+}
+.item{
+   list-style: none;
+}
+.info{
+   border-radius: 5px;
+   background-color: rgba(255, 255, 255, 0.1);
+   border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.img{
+   width: 100%;
+   height: 450px;
+   border-radius: 5px 5px 0px 0px;
+}
+.box{
+   padding: 7px 5px 0px 8px;
+}
+.title{
+   color: #fff;
+}
+.describe{
+   color: #fff;
+}
+.sublist{
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0px;
+   padding: 0px;
+   column-gap: 15px;
+}
+.subitem{
+   list-style: none;
+}
+.genres{
+   background-color: #fff;
+   font-weight: 600;
+   border-radius: 5px;
+   padding: 2px 5px;
+}
