@@ -1,5 +1,5 @@
 body{
-   background-color: #1c1c1c; 
+   background-color: #1c1c1c;
 }
 
 .label{
@@ -30,7 +30,14 @@ body{
 }
 
 
-
+.cloud{
+   /* width: 55%; */
+   padding: 0px;
+   margin-left: 20px;
+   margin-top: 30px;
+   row-gap: 34px;
+   margin-bottom: 50px;
+}
 .list{
    padding: 0px;
    margin: 0px;
@@ -75,4 +82,21 @@ body{
    font-weight: 600;
    border-radius: 5px;
    padding: 2px 5px;
+}
+.title-box{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;  
+}
+.cloudBox{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.starSvg{
+   background-color: transparent;
+   border: none;
+}
+.cloudItem{
+   list-style: none;
 }
