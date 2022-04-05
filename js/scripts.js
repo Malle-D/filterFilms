@@ -285,4 +285,5 @@ function empty(list) {
 
    list.appendChild(item)
    item.appendChild(title)
+   
 }
