@@ -24,8 +24,6 @@ elList.addEventListener("click", evt =>{
       }
       else{
          newBookmark.splice(findBtn, 1)
-         // console.log(newBookmark.splice(btnId, 1))
-         // console.log(newBookmark.splice(findBtn, 1))
       }
       if(newBookmark.length == 0){
          empty(cloudList)
