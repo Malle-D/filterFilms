@@ -4,6 +4,11 @@ var elSform = document.querySelector(".select-form")
 var elList = document.querySelector(".list")
 var elSelect = document.querySelector(".select")
 var cloudList = document.querySelector(".cloud")
+var sortBtn = document.querySelector(".sort-btn")
+
+
+let mdlTitle = document.querySelector(".modal-title")
+let mdlBody = document.querySelector(".modal-body")
 
 var newBookmark = []
 
@@ -30,16 +35,35 @@ elList.addEventListener("click", evt =>{
       }
       
       newRender(newBookmark,cloudList)
-      // renderThree(films,elList)
-
-      // elList.innerHTML = null
+      
       elInput.value = null
       
       const filtred = films.filter(film => film.genres.includes(elSelect.value))
       const secondFiltred = films.filter(film => elSelect.value == "all")
       
-      renderThree(filtred,elList)
-      renderThree(secondFiltred,elList)
+      renderTwo(secondFiltred,elList)
+      
+   }
+   
+})
+
+elList.addEventListener("click", info =>{
+   
+   if(info.target.matches(".info-btn")){
+      
+      let infoBtn = info.target.dataset.infoId
+      
+      console.log(infoBtn)
+      
+      let findId = films.find(fl => fl.id == infoBtn);
+      
+      console.log(findId.title)
+      
+      mdlTitle.textContent = findId.title
+      mdlBody.textContent = findId.overview
+      
+      mdlTitle.style.color = "#fff"
+      mdlBody.style.color = "#fff"
       
    }
    
@@ -110,4 +134,16 @@ elFform.addEventListener("submit", function(evt){
       elList.appendChild(empty)
    }
    
+})
+
+sortBtn.addEventListener("click", f =>{
+   
+   let sorted = films.sort((a, b) => {
+      if(b.title > a.title){
+         return -1
+      }
+   })
+   
+   render(sorted, elList)
+
 })

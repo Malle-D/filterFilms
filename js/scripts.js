@@ -12,6 +12,7 @@ function render(arr,list) {
       var bookmarkBtn = document.createElement("button")
       var elDescribe = document.createElement("p")
       var elSubList = document.createElement("ul")
+      var info = document.createElement("button")
       
       
       film.genres.forEach(genre =>{
@@ -31,6 +32,11 @@ function render(arr,list) {
       
       elItem.setAttribute("class", "item col-3")
       elInfo.setAttribute("class", "info")
+      info.setAttribute("class", "btn btn-success ms-auto me-2 mb-3 d-block info-btn")
+      info.setAttribute("data-bs-target", "#modal")
+      info.setAttribute("data-bs-toggle", "modal")
+      info.textContent = "More Info"
+      info.dataset.infoId = film.id;
       elImg.setAttribute("src", film.poster)
       elSvg.setAttribute("src", "./img/bookMark.svg")
       elSvg.setAttribute("class", "cloudImg")
@@ -56,9 +62,13 @@ function render(arr,list) {
       elTitleBox.appendChild(bookmarkBtn)
       elBox.appendChild(elDescribe)
       elBox.appendChild(elSubList)
+      elBox.appendChild(info)
    })
    
 }
+
+
+
 function renderTwo(arr,list) {
    
    list.style.width = "100%"

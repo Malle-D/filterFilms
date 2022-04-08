@@ -100,3 +100,8 @@ body{
 .cloudItem{
    list-style: none;
 }
+
+.modal-content{
+   background-color: #1c1c1cee;
+   border: 2px solid #fff;
+}

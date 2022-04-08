@@ -39,9 +39,9 @@
          <button class="btn btn-src btn-primary" type="submit" style="display: block;">
             Filter
          </button>
-         <a style="display: block;" class="btn btn-rest btn-secondary ms-3" href="./index.html">
-            Refresh Filter
-         </a>
+         <button style="display: block;" class="btn btn-rest btn-success ms-3 sort-btn" href="./index.html">
+            Sort Filmes
+         </button>
       </form>
    </div>
    
@@ -58,6 +58,27 @@
    
 </div>
 
+ 
+ <!-- Modal -->
+ <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="movieName">Modal title</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         <button type="button" class="btn btn-primary">Watch Now</button>
+       </div>
+     </div>
+   </div>
+ </div>
+
+<script src="./js/bootstrap.js"></script>
 <script src="./js/films.js"></script>
 <script src="./js/scripts.js"></script>
 <script src="./js/struck.js"></script>
